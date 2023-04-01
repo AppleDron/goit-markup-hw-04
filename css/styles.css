@@ -168,7 +168,7 @@ a {
 
 .hero-section {
   background-color: var(--main-color);
-  padding: 168px 0;
+  padding: 188px 0;
   text-align: center;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -179,6 +179,7 @@ a {
   background-position: center;
   max-width: 1440px;
   margin: 0 auto;
+  height: 600px;
 }
 
 .main-title {
@@ -229,10 +230,12 @@ a {
 }
 
 .about-icon-container {
-  padding: 24px 100px;
+  height: 112px;
   margin-bottom: 8px;
-  background-color: #f4f4fd;
   border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-icons {
@@ -381,6 +384,7 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   margin-bottom: 72px;
+  color: var(--main-color);
 }
 .customers-list {
   display: flex;
@@ -391,26 +395,26 @@ a {
 .customers-list-item {
   width: 168px;
   height: 88px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
 }
+
+.customers-icons {
+  fill: currentColor;
+}
+
 .customers-list-link {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #8e8f99;
+  color: #8e8f99;
+  border: 1px solid currentColor;
+  border-radius: 4px;
 }
 
 .customers-list-link:hover,
 .customers-list-link:focus {
-  fill: #404bbf;
-}
-
-.customers-list-item:hover,
-.customers-list-item:focus {
-  border-color: #404bbf;
+  color: #404bbf;
 }
 
 /* ========== /CUSTOMERS SECTION ========== */
@@ -464,7 +468,7 @@ a {
   color: var(--logo-color);
 }
 
-.footer-soc-title {
+.footer-soc-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -580,7 +584,6 @@ a {
 .portfolio-list-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  border-color: #f4f4fd;
 }
 
 .portfolio-cards-title {
